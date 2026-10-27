@@ -146,24 +146,19 @@ const Home: React.FC = () => {
     <IonPage>
       {/* Mobile-Friendly Responsive Header */}
       <IonHeader className="ion-no-border">
-        <IonToolbar className="home-header-toolbar">
-          {/* Brand & App Info */}
+                <IonToolbar className="home-header-toolbar">
+          {/* Brand & App Info with Official School Logo */}
           <div slot="start" className="mobile-header-brand">
-            <div className="mobile-logo-box">
-              <IonIcon icon={shieldCheckmarkOutline} />
+            <div className="school-header-logo-box">
+              <img src="/logo-smkn1beringin.png" alt="Logo SMKN 1 Beringin" />
             </div>
 
             <div className="mobile-brand-text">
               <h1 className="mobile-brand-title">Beringin Smart</h1>
               <div className="mobile-brand-subtitle">
-                <span>SMKN 1</span>
+                <span className="school-tag">SMKN 1 Beringin</span>
                 <span>•</span>
-                <span
-                  style={{
-                    color: userRole === 'petugas' ? '#c084fc' : '#e9d5ff',
-                    fontWeight: 700,
-                  }}
-                >
+                <span className="role-badge">
                   {userRole === 'petugas' ? 'Petugas Sarpras' : 'Siswa'}
                 </span>
               </div>
@@ -173,19 +168,15 @@ const Home: React.FC = () => {
           {/* User Avatar & Logout Button */}
           <IonButtons slot="end" className="mobile-header-end">
             <div className="mobile-avatar-pill">
-              <div
-                className="mobile-avatar-circle"
-                style={{ background: userRole === 'petugas' ? '#0369a1' : '#0284c7' }}
-              >
-                {currentUser?.name ? currentUser.name.charAt(0).toUpperCase() : 'A'}
+              <div className="mobile-avatar-circle">
+                {currentUser?.name ? currentUser.name.charAt(0).toUpperCase() : 'U'}
               </div>
               <span className="mobile-user-name">
-                {currentUser?.name ? currentUser.name.split(' ')[0] : 'User'}
+                {currentUser?.name ? currentUser.name.split(' ')[0] : 'Siswa'}
               </span>
             </div>
 
             <IonButton
-              color="light"
               fill="clear"
               size="small"
               onClick={handleLogout}
@@ -200,25 +191,15 @@ const Home: React.FC = () => {
 
       <IonContent className="ion-padding" style={{ '--background': '#f8fafc' } as React.CSSProperties}>
         <IonGrid fixed style={{ maxWidth: '1200px', padding: 0 }}>
-          {/* Hero Greeting Banner */}
+                    {/* Hero Greeting Banner */}
           <div className="home-hero-greeting">
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
               <div>
-                <h2
-                  style={{
-                    margin: 0,
-                    fontSize: '1.2rem',
-                    fontWeight: 800,
-                    color: '#4c1d95',
-                    display: 'flex',
-                    alignItems: 'center',
-                    fontFamily: "'Outfit', sans-serif",
-                  }}
-                >
+                <h2 className="greeting-title">
                   Halo, {currentUser?.name ? currentUser.name.split(' ')[0] : 'Pengguna'}
                   <IonIcon icon={handRightOutline} style={{ color: '#f59e0b', fontSize: '1.2rem', marginLeft: '6px' }} />
                 </h2>
-                <p style={{ margin: '2px 0 0 0', fontSize: '0.8rem', color: '#64748b' }}>
+                <p className="greeting-subtitle">
                   {userRole === 'petugas' ? 'Pantau & verifikasi kendala sarana prasarana sekolah.' : 'Laporkan kendala fasilitas sekolah untuk tindak lanjut cepat.'}
                 </p>
               </div>
