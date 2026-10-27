@@ -1,4 +1,4 @@
-/** Ionic CSS Variables **/
+/** Ionic CSS Variables - Jesika Edition (Nordic Slate & Arctic Azure) **/
 :root {
   --ion-color-primary: #0284c7;
   --ion-color-primary-rgb: 2, 132, 199;
@@ -8,25 +8,25 @@
   --ion-color-primary-tint: #38bdf8;
 
   --ion-color-secondary: #0f172a;
-  --ion-color-secondary-rgb: 30, 41, 59;
+  --ion-color-secondary-rgb: 15, 23, 42;
   --ion-color-secondary-contrast: #ffffff;
   --ion-color-secondary-contrast-rgb: 255, 255, 255;
   --ion-color-secondary-shade: #020617;
   --ion-color-secondary-tint: #334155;
 
   --ion-color-tertiary: #38bdf8;
-  --ion-color-tertiary-rgb: 2, 132, 199;
-  --ion-color-tertiary-contrast: #ffffff;
-  --ion-color-tertiary-contrast-rgb: 255, 255, 255;
-  --ion-color-tertiary-shade: #0369a1;
-  --ion-color-tertiary-tint: #38bdf8;
+  --ion-color-tertiary-rgb: 56, 189, 248;
+  --ion-color-tertiary-contrast: #0f172a;
+  --ion-color-tertiary-contrast-rgb: 15, 23, 42;
+  --ion-color-tertiary-shade: #0284c7;
+  --ion-color-tertiary-tint: #7dd3fc;
 
-  --ion-color-success: #16a34a;
-  --ion-color-success-rgb: 22, 163, 74;
+  --ion-color-success: #10b981;
+  --ion-color-success-rgb: 16, 185, 129;
   --ion-color-success-contrast: #ffffff;
   --ion-color-success-contrast-rgb: 255, 255, 255;
-  --ion-color-success-shade: #15803d;
-  --ion-color-success-tint: #22c55e;
+  --ion-color-success-shade: #059669;
+  --ion-color-success-tint: #34d399;
 
   --ion-color-warning: #f59e0b;
   --ion-color-warning-rgb: 245, 158, 11;
@@ -35,12 +35,12 @@
   --ion-color-warning-shade: #d97706;
   --ion-color-warning-tint: #fbbf24;
 
-  --ion-color-danger: #e11d48;
-  --ion-color-danger-rgb: 225, 29, 72;
+  --ion-color-danger: #ef4444;
+  --ion-color-danger-rgb: 239, 68, 68;
   --ion-color-danger-contrast: #ffffff;
   --ion-color-danger-contrast-rgb: 255, 255, 255;
-  --ion-color-danger-shade: #be123c;
-  --ion-color-danger-tint: #f43f5e;
+  --ion-color-danger-shade: #dc2626;
+  --ion-color-danger-tint: #f87171;
 
   --ion-color-dark: #0f172a;
   --ion-color-dark-rgb: 15, 23, 42;
