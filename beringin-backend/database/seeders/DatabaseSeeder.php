@@ -13,14 +13,14 @@ class DatabaseSeeder extends Seeder
     {
         // 1. Akun Petugas Sarpras
         $petugas = User::create([
-            'name' => 'Pak Teguh (Petugas Pemeliharaan)',
+            'name' => 'Pak Teguh (Petugas Sarpras)',
             'email' => 'petugas@beringin.sch.id',
             'password' => Hash::make('password123'),
             'role' => 'petugas',
         ]);
 
         // 2. Akun Siswa Utama
-        $siswa_utama = User::create([
+        $siswa = User::create([
             'name' => 'Jesika Sitorus (XI PPLG 1)',
             'email' => 'jesika@beringin.sch.id',
             'password' => Hash::make('password123'),
@@ -28,44 +28,57 @@ class DatabaseSeeder extends Seeder
         ]);
 
         // 3. Akun Siswa Pendukung
-        $siswa_pendukung = User::create([
-            'name' => 'Adrian Siregar (XI PPLG 2)',
+        $teman = User::create([
+            'name' => 'Adrian Siregar (Siswa XI PPLG 1)',
             'email' => 'siswa@beringin.sch.id',
             'password' => Hash::make('password123'),
             'role' => 'siswa',
         ]);
 
         // 4. Data Awal Laporan Pengaduan Sarpras (Edisi Jesika)
-        
         Laporan::create([
-            'user_id' => $siswa_utama->id,
-            'judul' => 'Proyektor InFocus Ruang Multimedia Buram & Bergaris',
-            'deskripsi' => 'Tampilan proyektor menampilkan bayangan garis merah tebal dan warna buram saat pembelajaran animasi.',
-            'lokasi' => 'Lab Multimedia Lt. 2 Gedung C',
-            'kategori' => 'Lab & Bengkel',
-            'foto' => null,
-            'status' => 'diproses',
+            'user_id' => $siswa->id,
+            'nama' => 'Stop Kontak Meja Praktik Lab RPL 2 Konslet',
+            'lokasi' => 'Lab Komputer RPL 2, Gedung C',
+            'kategori' => 'Laboratorium',
+            'deskripsi' => 'Colokan listrik pada deretan meja 3 mengeluarkan percikan api saat dihubungkan kabel charger laptop siswa.',
+            'status' => 'Sedang Diproses',
         ]);
 
         Laporan::create([
-            'user_id' => $siswa_pendukung->id,
-            'judul' => 'Pintu Kamar Mandi Siswa Putri Gedung B Kunci Rusak',
-            'deskripsi' => 'Kunci slot pintu kamar mandi nomor 2 patah sehingga tidak bisa dikunci dari dalam.',
-            'lokasi' => 'Toilet Putri Gedung B',
-            'kategori' => 'Fasilitas Umum',
-            'foto' => null,
-            'status' => 'selesai',
+            'user_id' => $teman->id,
+            'nama' => 'Kipas Angin Dinding Ruang Teori 1 Berbunyi Kasar',
+            'lokasi' => 'Ruang Teori 1, Lantai 2',
+            'kategori' => 'Fasilitas Kelas',
+            'deskripsi' => 'Baling-baling kipas angin dinding nomor 2 bergetar hebat dan mengeluarkan suara bising saat dinyalakan pada kecepatan maksimal.',
+            'status' => 'Menunggu',
         ]);
 
         Laporan::create([
-            'user_id' => $siswa_utama->id,
-            'judul' => 'Stopkontak Meja Guru Kelas XI PPLG 1 Goyang',
-            'deskripsi' => 'Stopkontak meja guru kendor dan mengeluarkan suara mendesis saat charger laptop dicolokkan.',
-            'lokasi' => 'Ruang Teori 1 Gedung A',
-            'kategori' => 'Ruang Belajar',
-            'foto' => null,
-            'status' => 'menunggu',
+            'user_id' => $siswa->id,
+            'nama' => 'Kran Wastafel Depan Lab Jaringan Bocor Menetes',
+            'lokasi' => 'Samping Lab Komputer & Jaringan',
+            'kategori' => 'Lingkungan/Taman',
+            'deskripsi' => 'Kran air wastafel tidak bisa tertutup rapat sehingga air terus menetes dan membuat lantai selasar licin.',
+            'status' => 'Selesai',
         ]);
 
+        Laporan::create([
+            'user_id' => $teman->id,
+            'nama' => 'Lampu LED Koridor Gedung C Mati Total',
+            'lokasi' => 'Selasar Depan Ruang Guru Kejuruan',
+            'kategori' => 'Lingkungan/Taman',
+            'deskripsi' => 'Dua buah lampu tabung LED di koridor padam sejak kemarin sore, membuat lorong gelap saat senja.',
+            'status' => 'Selesai',
+        ]);
+
+        Laporan::create([
+            'user_id' => $siswa->id,
+            'nama' => 'Engsel Jendela Kelas XI PPLG 1 Macet',
+            'lokasi' => 'Ruang Belajar XI PPLG 1',
+            'kategori' => 'Fasilitas Kelas',
+            'deskripsi' => 'Jendela kaca sisi timur sulit ditutup rapat karena baut engsel kendur dan berkarat.',
+            'status' => 'Sedang Diproses',
+        ]);
     }
 }
