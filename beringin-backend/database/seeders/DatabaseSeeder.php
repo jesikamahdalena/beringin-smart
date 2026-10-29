@@ -21,7 +21,7 @@ class DatabaseSeeder extends Seeder
 
         // 2. Akun Siswa Utama
         $siswa = User::create([
-            'name' => 'Jesika Sitorus (XI PPLG 1)',
+            'name' => 'Jesika Mahdalena Tri Hapsari Puspita (XI PPLG 1)',
             'email' => 'jesika@beringin.sch.id',
             'password' => Hash::make('password123'),
             'role' => 'siswa',
@@ -35,7 +35,7 @@ class DatabaseSeeder extends Seeder
             'role' => 'siswa',
         ]);
 
-        // 4. Data Awal Laporan Pengaduan Sarpras (Edisi Jesika)
+        // 4. Data Awal Laporan Pengaduan Sarpras (Jesika Mahdalena Tri Hapsari Puspita)
         Laporan::create([
             'user_id' => $siswa->id,
             'nama' => 'Stop Kontak Meja Praktik Lab RPL 2 Konslet',

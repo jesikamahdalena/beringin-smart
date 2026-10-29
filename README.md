@@ -1,4 +1,4 @@
-# Beringin Smart 🏫 • Jesika Sitorus Edition
+# Beringin Smart 🏫 — Portal Pengaduan Sarana & Prasarana
 
 <div align="center">
   <img src="Beringin-Smart/public/logo-smkn1beringin.png" alt="Logo SMKN 1 Beringin" width="130" style="margin-bottom: 12px;"/>
@@ -13,7 +13,7 @@
 
 | Atribut | Informasi Terdaftar |
 | :--- | :--- |
-| **Nama Siswa** | **Jesika Sitorus** |
+| **Nama Siswa** | **Jesika Mahdalena Tri Hapsari Puspita** |
 | **Kelas & Jurusan** | **XI Pengembangan Perangkat Lunak & Gim 1 (XI PPLG 1)** |
 | **Sekolah** | SMK Negeri 1 Beringin, Deli Serdang |
 | **Petugas / Teknisi** | Pak Teguh *(Petugas Sarana & Prasarana SMKN 1 Beringin)* |
@@ -35,7 +35,7 @@ Edisi Jesika mengusung konsep **Nordic Slate & Arctic Azure**:
 
 ## 📸 Dokumentasi Tangkapan Layar Aplikasi
 
-Berikut adalah hasil pengujian langsung sistem Beringin Smart edisi Jesika Sitorus:
+Berikut adalah hasil pengujian langsung sistem Beringin Smart Jesika Mahdalena Tri Hapsari Puspita:
 
 | No | Modul / Halaman | Tangkapan Layar |
 | :---: | :--- | :--- |

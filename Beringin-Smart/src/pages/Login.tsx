@@ -117,7 +117,7 @@ const Login: React.FC = () => {
               Beringin Smart
             </h1>
             <p style={{ margin: 0, color: '#94a3b8', fontSize: '0.9rem', fontWeight: 500 }}>
-              Portal Pengaduan Sarana & Prasarana • Jesika Sitorus Edition
+              Portal Pengaduan Sarana & Prasarana • SMKN 1 Beringin
             </p>
           </div>
 
@@ -288,7 +288,7 @@ const Login: React.FC = () => {
 
           <div style={{ textAlign: 'center', marginTop: '20px' }}>
             <span style={{ fontSize: '0.78rem', color: '#94a3b8' }}>
-              © 2026-2027 SMK Negeri 1 Beringin • Jesika Sitorus (XI PPLG 1) • SKKNI No. 282/2016
+              © 2026-2027 SMK Negeri 1 Beringin • Jesika Mahdalena Tri Hapsari Puspita (XI PPLG 1) • SKKNI No. 282/2016
             </span>
           </div>
         </div>
